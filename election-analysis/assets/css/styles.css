@@ -38,3 +38,26 @@ footer {
     bottom: 0;
     width: 100%;
 }
+
+#news-feed .article {
+    border-bottom: 1px solid #ccc;
+    padding: 10px 0;
+}
+
+#news-feed .article h3 {
+    margin: 0;
+    font-size: 1.2em;
+}
+
+#news-feed .article h3 a {
+    text-decoration: none;
+    color: #4CAF50;
+}
+
+#news-feed .article p {
+    margin: 5px 0;
+}
+
+#news-feed .article p small {
+    color: #888;
+}
