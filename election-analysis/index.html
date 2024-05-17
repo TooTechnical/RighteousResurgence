@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Election Probability Analysis</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Election Probability Analysis</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#analysis">Analysis</a></li>
+                <li><a href="#news">News</a></li>
+                <li><a href="#forum">Forum</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="home">
+            <h2>Welcome to the Election Probability Analysis Website</h2>
+            <p>This website provides real-time analysis of the probability of success for Joe Biden and Donald Trump in the upcoming election.</p>
+        </section>
+        <section id="analysis">
+            <h2>Probability Analysis</h2>
+            <canvas id="myChart"></canvas>
+        </section>
+        <section id="news">
+            <h2>Latest News</h2>
+            <div id="news-feed"></div>
+        </section>
+        <section id="forum">
+            <h2>Discussion Forum</h2>
+            <div id="forum-content"></div>
+        </section>
+        <section id="polls">
+            <h2>Polls and Surveys</h2>
+            <form id="pollForm">
+                <label for="candidate">Who do you support?</label>
+                <select id="candidate">
+                    <option value="biden">Joe Biden</option>
+                    <option value="trump">Donald Trump</option>
+                </select>
+                <button type="submit">Submit</button>
+            </form>
+            <div id="pollResults"></div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Election Analysis</p>
+    </footer>
+</body>
+</html>

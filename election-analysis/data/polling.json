@@ -1,0 +1,14 @@
+[
+    {
+        "date": "2024-05-16",
+        "biden": 48,
+        "trump": 45,
+        "polling_source": "Pollster XYZ"
+    },
+    {
+        "date": "2024-05-17",
+        "biden": 49,
+        "trump": 46,
+        "polling_source": "Pollster ABC"
+    }
+]
