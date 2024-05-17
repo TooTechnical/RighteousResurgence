@@ -1,0 +1,33 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+header, footer {
+    background-color: #004d99;
+    color: #fff;
+    text-align: center;
+    padding: 10px 20px;
+}
+
+main {
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+
+#chartContainer {
+    width: 60%;
+}
+
+#facts {
+    width: 35%;
+}
+
+canvas {
+    width: 100% !important;
+    height: auto !important;
+}
