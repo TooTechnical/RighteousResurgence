@@ -33,7 +33,7 @@ function displayChart(data) {
 }
 
 async function fetchNews() {
-    const apiKey = 'YOUR_API_KEY';  // Replace with your NewsAPI key
+    const apiKey = '9d266754cbfd4eb09dffc289753ebfe0';  // Replace with your NewsAPI key
     const response = await fetch(`https://newsapi.org/v2/everything?q=biden+trump&apiKey=${apiKey}`);
     const data = await response.json();
     displayNews(data.articles);
