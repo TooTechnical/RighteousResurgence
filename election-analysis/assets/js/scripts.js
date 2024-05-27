@@ -1,59 +1,48 @@
-async function fetchData() {
-    const response = await fetch('data/polling.json');
-    const data = await response.json();
-    displayChart(data);
-}
+document.addEventListener('DOMContentLoaded', () => {
+    const userInputs = [];
+    const form = document.getElementById('userInputForm');
+    const resultsDiv = document.getElementById('results');
 
-function displayChart(data) {
-    const ctx = document.getElementById('myChart').getContext('2d');
-    const myChart = new Chart(ctx, {
-        type: 'line',
+    form.addEventListener('submit', (e) => {
+        e.preventDefault();
+        const candidate = document.getElementById('candidate').value;
+        userInputs.push(candidate);
+        displayResults();
+    });
+
+    function displayResults() {
+        const totalVotes = userInputs.length;
+        const bidenVotes = userInputs.filter(vote => vote === 'Biden').length;
+        const trumpVotes = userInputs.filter(vote => vote === 'Trump').length;
+        const bidenPercentage = ((bidenVotes / totalVotes) * 100).toFixed(2);
+        const trumpPercentage = ((trumpVotes / totalVotes) * 100).toFixed(2);
+
+        resultsDiv.innerHTML = `
+            <p>Total Votes: ${totalVotes}</p>
+            <p>Joe Biden: ${bidenVotes} votes (${bidenPercentage}%)</p>
+            <p>Donald Trump: ${trumpVotes} votes (${trumpPercentage}%)</p>
+        `;
+
+        // Update the chart
+        updateChart(bidenPercentage, trumpPercentage);
+    }
+
+    // Chart.js setup
+    const ctx = document.getElementById('probabilityChart').getContext('2d');
+    const chart = new Chart(ctx, {
+        type: 'pie',
         data: {
-            labels: data.map(entry => entry.date),
+            labels: ['Joe Biden', 'Donald Trump'],
             datasets: [{
-                label: 'Biden',
-                data: data.map(entry => entry.biden),
-                borderColor: 'rgba(75, 192, 192, 1)',
-                borderWidth: 1
-            }, {
-                label: 'Trump',
-                data: data.map(entry => entry.trump),
-                borderColor: 'rgba(255, 99, 132, 1)',
-                borderWidth: 1
+                label: 'Election Probability',
+                data: [0, 0],
+                backgroundColor: ['#4CAF50', '#FF5733'],
             }]
-        },
-        options: {
-            scales: {
-                y: {
-                    beginAtZero: true
-                }
-            }
         }
     });
-}
 
-async function fetchNews() {
-    const apiKey = '9d266754cbfd4eb09dffc289753ebfe0';  // Replace with your NewsAPI key
-    const response = await fetch(`https://newsapi.org/v2/everything?q=biden+trump&apiKey=${apiKey}`);
-    const data = await response.json();
-    displayNews(data.articles);
-}
-
-function displayNews(articles) {
-    const newsFeed = document.getElementById('news-feed');
-    articles.forEach(article => {
-        const articleDiv = document.createElement('div');
-        articleDiv.innerHTML = `<h3>${article.title}</h3><p>${article.description}</p>`;
-        newsFeed.appendChild(articleDiv);
-    });
-}
-
-document.getElementById('pollForm').addEventListener('submit', function(event) {
-    event.preventDefault();
-    const candidate = document.getElementById('candidate').value;
-    const pollResults = document.getElementById('pollResults');
-    pollResults.innerHTML = `You support: ${candidate}`;
+    function updateChart(bidenPercentage, trumpPercentage) {
+        chart.data.datasets[0].data = [bidenPercentage, trumpPercentage];
+        chart.update();
+    }
 });
-
-fetchData();
-fetchNews();
