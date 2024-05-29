@@ -40,6 +40,19 @@
                 <button type="submit">Login</button>
             </form>
         </section>
+        <section id="profile" style="display: none;">
+            <h2>Your Profile</h2>
+            <div>
+                <img id="profilePic" src="assets/images/default-profile.png" alt="Profile Picture" width="100">
+                <input type="file" id="profilePicInput">
+            </div>
+            <form id="passwordForm">
+                <label for="newPassword">New Password:</label>
+                <input type="password" id="newPassword" name="newPassword" required>
+                <button type="submit">Change Password</button>
+            </form>
+            <button id="logoutButton">Logout</button>
+        </section>
         <section id="community">
             <h2>Community Discussions</h2>
             <div id="commentsSection">
