@@ -2,10 +2,11 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    background-color: white;
 }
 
 header {
-    background-color: #003366;
+    background-color: #003366; /* Dark blue color */
     color: white;
     padding: 10px 0;
     text-align: center;
@@ -14,6 +15,8 @@ header {
 nav ul {
     list-style: none;
     padding: 0;
+    margin: 0;
+    text-align: center;
 }
 
 nav ul li {
@@ -24,23 +27,14 @@ nav ul li {
 nav ul li a {
     color: white;
     text-decoration: none;
+    font-weight: bold;
 }
 
 main {
     padding: 20px;
-    background-color: white;
-
 }
 
-h2 {
-    color: #003366;
-}
-
-#userInputForm {
-    margin-top: 20px;
-}
-
-#results {
+#news-feed {
     margin-top: 20px;
 }
 
@@ -56,7 +50,7 @@ h2 {
 
 #news-feed .article h3 a {
     text-decoration: none;
-    color: #003366;
+    color: #4CAF50;
 }
 
 #news-feed .article p {
@@ -65,4 +59,11 @@ h2 {
 
 #news-feed .article p small {
     color: #888;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #003366;
+    color: white;
 }

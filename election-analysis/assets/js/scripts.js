@@ -36,7 +36,7 @@ document.addEventListener('DOMContentLoaded', () => {
             datasets: [{
                 label: 'Election Probability',
                 data: [0, 0],
-                backgroundColor: ['#4CAF50', '#FF5733'],
+                backgroundColor: ['#00AEF3', '#E81B23'],
             }]
         }
     });
