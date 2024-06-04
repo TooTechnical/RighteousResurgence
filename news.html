@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News Blog - Election 2024</title>
+    <link rel="stylesheet" href="assets/css/news.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Election 2024 News Blog</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="news.html">News</a></li>
+                    <li><a href="community.html">Community</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <section id="news">
+            <h2>Latest News on Trump vs Biden</h2>
+            <div id="news-feed" class="news-feed"></div>
+        </section>
+
+        <section id="create-news">
+            <h2>Create a News Article</h2>
+            <form id="newsForm">
+                <label for="newsTitle">Title:</label>
+                <input type="text" id="newsTitle" name="newsTitle" required>
+                
+                <label for="newsContent">Content:</label>
+                <div id="toolbar">
+                    <button type="button" onclick="execCmd('bold')"><b>B</b></button>
+                    <button type="button" onclick="execCmd('italic')"><i>I</i></button>
+                    <button type="button" onclick="execCmd('underline')"><u>U</u></button>
+                    <button type="button" onclick="execCmd('insertOrderedList')">OL</button>
+                    <button type="button" onclick="execCmd('insertUnorderedList')">UL</button>
+                    <button type="button" onclick="execCmd('createLink')">Link</button>
+                    <button type="button" onclick="execCmd('insertImage')">Image</button>
+                </div>
+                <div id="newsContent" contenteditable="true" class="content-editor"></div>
+                
+                <button type="submit" class="btn">Submit</button>
+            </form>
+        </section>
+
+        <section id="all-news">
+            <h2>All News Articles</h2>
+            <div id="all-news-feed" class="news-feed"></div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>© 2024 Election Analysis</p>
+        </div>
+    </footer>
+
+    <script src="assets/js/news.js"></script>
+</body>
+</html>
