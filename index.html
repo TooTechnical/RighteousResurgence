@@ -8,51 +8,75 @@
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <body>
-    <header>
-        <h1>Election Probability Analysis</h1>
-        <nav>
-            <ul>
-                <li><a href="home.html">Home</a></li>
-                <li><a href="news.html">News</a></li>
-                <li><a href="community.html">Community</a></li>
-            </ul>
-        </nav> 
-    </header>
+    <div class="wrapper">
+        <header>
+            <h1>Election Probability Analysis</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                </ul>
+            </nav> 
+        </header>
 
-    <main>
-        <section id="home">
-            <h2>Welcome to the Election Probability Analysis Website</h2>
-            <p>This website provides real-time analysis of the probability of success for Joe Biden and Donald Trump in the upcoming election.</p>
-        </section>
+        <main>
+            <section id="home">
+                <h2>Welcome to the Election Probability Analysis Website</h2>
+                <p>This website provides real-time analysis of the probability of success for Joe Biden and Donald Trump in the upcoming election.</p>
+            </section>
 
-        <section id="analysis">
-            <h2>Probability Analysis</h2>
-            <canvas id="probabilityChart" width="300" height="300"></canvas>
-        </section>
+            <section id="chart-section" style="float: right; width: 40%; padding: 20px;">
+                <h2>Probability Analysis</h2>
+                <canvas id="probabilityChart"></canvas>
+            </section>
+            
+            <section id="news">
+                <h2>Latest News</h2>
+                <div id="news-feed"></div>
+            </section>
 
-        <section id="news">
-            <h2>Latest News</h2>
-            <div id="news-feed"></div>
-        </section>
+            <section id="forum">
+                <h2>Discussion Forum</h2>
+                <form id="userInputForm">
+                    <label for="candidate">Who do you think will win?</label>
+                    <select id="candidate" name="candidate">
+                        <option value="Biden">Joe Biden</option>
+                        <option value="Trump">Donald Trump</option>
+                    </select>
+                    <button type="submit">Submit</button>
+                </form>
+                <div id="results"></div>
+            </section>
+        </main>
 
-        <section id="forum">
-            <h2>Discussion Forum</h2>
-            <form id="userInputForm">
-                <label for="candidate">Who do you think will win?</label>
-                <select id="candidate" name="candidate">
-                    <option value="Biden">Joe Biden</option>
-                    <option value="Trump">Donald Trump</option>
-                </select>
-                <button type="submit">Submit</button>
-            </form>
-            <div id="results"></div>
-        </section>
-    </main>
-
-    <footer>
-        <p>© 2024 Election Analysis</p>
-    </footer>
-
+        <footer>
+            <div class="footer-container">
+                <div class="footer-left">
+                    <h4>About Us</h4>
+                    <p>Election Probability Analysis provides real-time data and analysis for the upcoming election, helping you stay informed about the latest trends and probabilities.</p>
+                </div>
+                <div class="footer-center">
+                    <h4>Contact Us</h4>
+                    <ul>
+                        <li>Email: support@electionanalysis.com</li>
+                        <li>Phone: (123) 456-7890</li>
+                        <li>Address: 123 Election Road, Democracy City</li>
+                    </ul>
+                </div>
+                <div class="footer-right">
+                    <h4>Follow Us</h4>
+                    <ul class="social-media">
+                        <li><a href="https://facebook.com" target="_blank">Facebook</a></li>
+                        <li><a href="https://twitter.com" target="_blank">Twitter</a></li>
+                        <li><a href="https://instagram.com" target="_blank">Instagram</a></li>
+                        <li><a href="https://linkedin.com" target="_blank">LinkedIn</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2024 Election Probability Analysis. All rights reserved.</p>
+            </div>
+        </footer>
+    </div>
     <script src="assets/js/scripts.js"></script>
 </body>
 </html>

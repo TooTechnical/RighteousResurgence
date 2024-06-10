@@ -31,6 +31,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const ctx = document.getElementById('probabilityChart').getContext('2d');
     const chart = new Chart(ctx, {
         type: 'pie',
+        maintainAspectRatio: false,
+        responsive: true,
         data: {
             labels: ['Joe Biden', 'Donald Trump'],
             datasets: [{
@@ -38,6 +40,24 @@ document.addEventListener('DOMContentLoaded', () => {
                 data: [0, 0],
                 backgroundColor: ['#00AEF3', '#E81B23'],
             }]
+        },
+        options: {
+            layout: {
+                padding: {
+                    left: 20,
+                    right: 20,
+                    top: 20,
+                    bottom: 20
+                }
+            },
+            plugins: {
+                legend: {
+                    position: 'top'
+                },
+                tooltip: {
+                    enabled: true
+                }
+            }
         }
     });
 

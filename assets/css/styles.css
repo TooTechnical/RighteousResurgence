@@ -66,3 +66,101 @@ h2 {
 #news-feed .article p small {
     color: #888;
 }
+
+#analysis {
+    width: 300px;
+    height: 300px;
+    
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.wrapper {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    margin-top: auto; /* This makes sure the footer stays at the bottom */
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.footer-container > div {
+    flex: 1;
+    margin: 10px;
+    min-width: 200px;
+}
+
+.footer-left, .footer-center, .footer-right {
+    padding: 10px;
+}
+
+.footer-left h4, .footer-center h4, .footer-right h4 {
+    margin-bottom: 10px;
+    color: #ffdd57; /* Gold color for headers */
+}
+
+.footer-left p, .footer-center ul, .footer-right ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.footer-center ul li, .footer-right ul li {
+    margin-bottom: 5px;
+}
+
+.footer-right .social-media {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-right .social-media li {
+    margin-bottom: 5px;
+}
+
+.footer-right .social-media li a {
+    color: #ffdd57; /* Gold color for links */
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-right .social-media li a:hover {
+    color: #fff;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    border-top: 1px solid #444;
+    padding-top: 10px;
+    color: #aaa;
+}
+
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+    }
+}
