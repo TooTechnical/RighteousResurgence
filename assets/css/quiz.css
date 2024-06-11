@@ -59,8 +59,8 @@ nav ul li a:hover {
 }
 
 .header-image img {
-    width: 25%;
-    height: 25%;
+    width: 100%;
+    height: auto;
     display: block;
     margin: 0;
     padding: 0;
@@ -71,7 +71,7 @@ main {
     padding: 20px;
 }
 
-#home .content-container {
+#quiz-section .content-container {
     max-width: 800px;
     margin: 0 auto;
     padding: 20px;
@@ -81,8 +81,56 @@ main {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-#chart-section {
+#quiz-container {
+    margin: 20px auto;
+    width: 60%;
+    padding: 20px;
+    border: 2px solid #333;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+}
+
+#question {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+#options {
+    display: flex;
+    flex-direction: column;
+}
+
+.option {
+    margin: 10px 0;
+    padding: 10px;
+    background-color: #00AEF3;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.option:hover {
+    background-color: #007bb5;
+}
+
+#result {
     margin-top: 20px;
+    font-size: 1.2em;
+}
+
+#next-btn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #E81B23;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#next-btn:hover {
+    background-color: #b51118;
 }
 
 footer {

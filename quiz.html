@@ -3,54 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Righteous Resurgence</title>
-    <link rel="stylesheet" href="assets/css/styles.css">
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <title>Righteous Resurgence Quiz</title>
+    <link rel="stylesheet" href="assets/css/quiz.css">
 </head>
 <body>
     <div class="wrapper">
         <header>
             <div class="header-content">
-                <h1>Righteous Resurgence</h1>
+                <h1>Righteous Resurgence Quiz</h1>
                 <nav>
                     <ul>
                         <li><a href="index.html">Home</a></li>
                         <li><a href="biden-gaffes.html">Sleepy Joe</a></li>
                         <li><a href="quiz.html">Quiz</a></li>
+
                     </ul>
                 </nav>
             </div>
             <div class="header-image">
-                <img src="assets/images/trump8.webp" alt="Trump Rally">
+                <img src="assets/images/trump-rally-header.jpg" alt="Trump Rally">
             </div>
         </header>
 
         <main>
-            <section id="home">
+            <section id="quiz-section">
                 <div class="content-container">
-                    <h2>Welcome To The Who Do You Think Is Going To Win The 2024 Presidential Election</h2>
-                    <p>Welcome to our comedy corner where you can cast your vote and have a laugh. Who do you think will win the 2024 Presidential Election: the ever-dynamic Donald Trump or Sleepy Joe Biden? Cast your vote and see where you stand among fellow Americans!</p>
-                    <p>Watch out for Joe Biden's next campaign speech! Will he remember what state he's in this time, or will we be treated to another round of "Where am I?" Guess we'll have to wait and see!</p>
-                    <p>Meanwhile, Donald Trump is already planning his next sharp-dressed rally, making sure every hair is in place. They say you can judge a man by his ties, and Trump's are always on point!</p>
+                    <h2>Test Your Knowledge!</h2>
+                    <div id="quiz-container">
+                        <div id="question"></div>
+                        <div id="options">
+                            <button class="option" onclick="checkAnswer(0)"></button>
+                            <button class="option" onclick="checkAnswer(1)"></button>
+                            <button class="option" onclick="checkAnswer(2)"></button>
+                            <button class="option" onclick="checkAnswer(3)"></button>
+                        </div>
+                        <div id="result"></div>
+                    </div>
+                    <button id="next-btn" onclick="nextQuestion()">Next Question</button>
                 </div>
-            </section>
-
-            <section id="chart-section" style="float: right; width: 40%; padding: 20px;">
-                <h2>Probability Analysis</h2>
-                <canvas id="probabilityChart"></canvas>
-            </section>
-
-            <section id="forum">
-                <h2>Discussion Forum</h2>
-                <form id="userInputForm">
-                    <label for="candidate">Who do you think will win?</label>
-                    <select id="candidate" name="candidate">
-                        <option value="Biden">Joe Biden</option>
-                        <option value="Trump">Donald Trump</option>
-                    </select>
-                    <button type="submit">Submit</button>
-                </form>
-                <div id="results"></div>
             </section>
         </main>
 
@@ -58,7 +48,7 @@
             <div class="footer-container">
                 <div class="footer-left">
                     <h4>About Us</h4>
-                    <p>Righteous Resurgence provides a fun interactive pie chart where you can choose which candidate is going to win the 2024 presidential election.</p>
+                    <p>Righteous Resurgence provides a fun interactive quiz where you can test your knowledge about the 2024 presidential election.</p>
                 </div>
                 <div class="footer-center">
                     <h4>Contact Us</h4>
@@ -84,6 +74,6 @@
             </div>
         </footer>
     </div>
-    <script src="assets/js/scripts.js"></script>
+    <script src="assets/js/quiz.js"></script>
 </body>
 </html>

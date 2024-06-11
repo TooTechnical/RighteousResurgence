@@ -46,8 +46,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 padding: {
                     left: 20,
                     right: 20,
-                    top: 20,
-                    bottom: 20
+                    top: 10,
+                    bottom: 10
                 }
             },
             plugins: {
