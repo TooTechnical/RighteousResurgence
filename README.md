@@ -63,19 +63,100 @@ Design: Clean and humorous layout with easy-to-read typography
 
 ## Typography
 
-The website uses Arial, sans-serif as the primary font. Headings are bold and larger than body text for emphasis.
+The website uses Arial, sans-serif for a clean, readable appearance.
+
 
 ## Colour Scheme
 
-The color scheme is designed to be calming and soothing. The primary background color is #f4f4f4, with text in #333. Social media icons are in #fff.
+Here is the color scheme for the provided CSS file:
+
+### Background Colors
+- **General Background**: `#f8f9fa`
+- **Header Background**: `#007bff`
+- **Quiz Container Background**: `#fff`
+- **Footer Background**: `#343a40`
+- **Footer Bottom Background**: `#23272b`
+
+### Text Colors
+- **General Text**: `#333`
+- **Header Text**: `#fff`
+- **Quiz Container Heading**: `#007bff`
+- **Quiz Button Text**: `#fff`
+- **Footer Text**: `#fff`
+- **Footer Section Heading**: `#f8f9fa`
+
+### Border Colors
+- **Quiz Container Border**: `#ddd`
+- **Footer Section Heading Border**: `#007bff`
+
+### Button Colors
+- **Quiz Button Background**: `#007bff`
+- **Quiz Button Hover Background**: `#0056b3`
+
+### Link Colors
+- **Navigation and Footer Links**: `#fff`
+- **Footer Section Links**: `#007bff`
+- **Footer Section Links Hover**: `#0056b3`
+
+### Shadow
+- **Quiz Container Box Shadow**: `rgba(0, 0, 0, 0.1)`
+
+### Example Color Swatch
+![Color Swatch](https://www.colorhexa.com/f8f9fa.png)
+![Color Swatch](https://www.colorhexa.com/007bff.png)
+![Color Swatch](https://www.colorhexa.com/333333.png)
+![Color Swatch](https://www.colorhexa.com/ffffff.png)
+![Color Swatch](https://www.colorhexa.com/343a40.png)
+![Color Swatch](https://www.colorhexa.com/23272b.png)
+![Color Swatch](https://www.colorhexa.com/dddddd.png)
+![Color Swatch](https://www.colorhexa.com/0056b3.png)
+
+And for the other 2 web pages
+Here is the color scheme for the provided CSS file:
+
+### Background Colors
+- **Body Background**: `#f8f9fa`
+- **Header Content Background**: `#333`
+- **Navigation Background**: `#444`
+- **Navigation Link Hover Background**: `#555`
+- **Home Content Container Background**: `#f9f9f9`
+- **Footer Background**: `#333`
+- **Footer Bottom Border**: `#444`
+
+### Text Colors
+- **General Text**: `#333`
+- **Header Content Text**: `#fff`
+- **Navigation Link Text**: `#fff`
+- **Footer Text**: `#fff`
+- **Footer Bottom Text**: `#aaa`
+
+### Header Title Text
+- **Header Title Text**: `#fff`
+
+### Footer Section Headings
+- **Footer Section Heading Text**: `#ffdd57`
+
+### Footer Social Media Links
+- **Social Media Links**: `#ffdd57`
+- **Social Media Links Hover**: `#fff`
+
+### Shadows
+- **Header Content Box Shadow**: `rgba(0,0,0,0.2)`
+- **Navigation Box Shadow**: `rgba(0,0,0,0.2)`
+- **Home Content Container Box Shadow**: `rgba(0, 0, 0, 0.1)`
+
+### Example Color Swatch
+![#f8f9fa](https://www.colorhexa.com/f8f9fa.png)
+![#333](https://www.colorhexa.com/333333.png)
+![#444](https://www.colorhexa.com/444444.png)
+![#555](https://www.colorhexa.com/555555.png)
+![#f9f9f9](https://www.colorhexa.com/f9f9f9.png)
+![#ffdd57](https://www.colorhexa.com/ffdd57.png)
+![#aaa](https://www.colorhexa.com/aaaaaa.png)
 
 ## Imagery
 
-The hero image is the OHM Symbol that represents Kundalini Yoga.
-![Hero Image](assets/images/om.webp)
-
-The image below represents someone meditating with the view of the chakras.
-![Responsivity Example](assets/images/chakra.webp)
+I have not incorparated Imagery and this is due to ongoing bugs that have had negative effects on the javascript, there was some issues with the footer covering up the pie chart and also sometimes the javascript would not work and sync properly to the HTML So i created 2 quizes and included a video to try and compensate. I will however need to spend more time at tweaking the javascript as to make it run more smoother.
 
 ## Design
 
@@ -88,11 +169,6 @@ The color scheme includes:
 - Text: #333
 - Social Media Icons: #fff
 
-### Imagery
-- Hero Image: OHM Symbol, representing Kundalini Yoga.
-- Meditation Image: Depicts someone meditating with a view of the chakras.
-  ![Meditation Image](assets/images/chakra.webp)
-
 ## Features
 
 ### Current Features
@@ -101,12 +177,12 @@ The color scheme includes:
 - **Social Media Integration:** Links to social platforms for enhanced connectivity.
 
 ### Future Enhancements
-- **Online Booking System:** For easier scheduling of classes.
-- **E-commerce Functionality:** To sell yoga-related products.
+- ** Real time data results for election probability
+- **E-commerce Functionality:** To sell Trump T-shirts -related products.
 - **Multi-Language Support:** To cater to a global audience.
 
 ## Technologies Used
-- **HTML5** and **CSS3**: For structuring and styling the website.
+- **HTML5** and **CSS3** And **javascript** : For structuring and styling the website.
 - **Font Awesome**: For icons.
 - **GitHub**: For hosting and version control.
 - **Google Fonts**: For custom fonts.
@@ -129,22 +205,6 @@ More details on these steps are available in the GitHub documentation.
 
 **Index HTML Page for desktop view
 
-![Lighthouse test](assets/images/sch1.png)
-
-**Index HTML Page for Mobile view
-![lighthouse test](assets/images/sch2.png)
-
-**Yoga HTML for Mobile view
-![lighthouse test](assets/images/sch3.png)
-
-**Yoga HTML for Desktop view
-![lighthouse test](assets/images/sch4.png)
-
-**Contact HTML for mobile
-![lighthouse test](assets/images/sch6.png)
-
-**Contact HTML for desktop
-![lighthouse test](assets/images/sch7.png)
 
 ##Validation Testing:
 
@@ -157,8 +217,8 @@ More details on these steps are available in the GitHub documentation.
   - ## Contact Form Validation Check:
   - - ![validation test](assets/images/contactformvaledation.png)
    
-    - - ## Contact Form Validation Check:
-  - - ![validation test](assets/images/cssvalidation.png)
+    - - ## lighthouse :
+  - - ![validation test](assets/images/lh1.png)
 
 
 ## Credits
