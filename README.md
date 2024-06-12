@@ -4,10 +4,8 @@
 
 # Welcome to RIGHTEOUS RESURGENCE
 
-Welcome to Righteous Resurgence, your interactive comedy corner where you can cast your vote and test your knowledge about the 2024 Presidential Election! Engage in humorous commentary, quizzes, and probability analysis, all centered around the upcoming election.
-## Responsivity Example Image
+This is a comprehensive guide to the Righteous Resurgence website using HTML, CSS, and JavaScript. The website includes three main pages: Home, Presidents Test, and Quiz. The Home page introduces the main features of the website, the President's Test page includes a humorous quiz about presidential fitness, and the Quiz page tests users' knowledge about the 2024 presidential election.
 
-![Responsivity Example](assets/images/hpshot.png) <!-- Add an example image showcasing responsivity -->
 
 ## Contents
 
@@ -21,57 +19,47 @@ Welcome to Righteous Resurgence, your interactive comedy corner where you can ca
 - [Testing](#testing)
 - [Credits](#credits)
 
-# Kundalini Yoga
-
-This is a comprehensive guide to creating a Kundalini Yoga website using HTML, CSS, and a touch of Font Awesome. The website includes three main pages: Home, Yoga, and Contact. The Home page introduces Kundalini Yoga, the Yoga page delves into the practice and its benefits, and the Contact page allows users to get in touch.
-
 ## UX (User Experience)
 
-The user experience is designed to be intuitive and engaging. The website features a clean layout, easy-to-read typography, and a calming color scheme. Users can easily navigate between pages using the navigation bar, and the content is structured to provide a logical flow of information.
+The user experience is designed to be intuitive and engaging. The website features a clean layout, easy-to-read typography, and a humorous approach. Users can easily navigate between pages using the navigation bar, and the content is structured to provide a logical flow of information.
+
+
 
 ## User Stories
 
-- As a user, I want to learn about Kundalini Yoga and its origins so that I can understand its history and significance.
-- As a user, I want to explore the benefits of Kundalini Yoga and its practices so that I can decide if it's right for me.
-- As a user, I want to contact the Kundalini Yoga organization so that I can ask questions, provide feedback, or get involved.
+- As a user, I want to vote for who I think will win the 2024 Presidential Election so that I can see where I stand among fellow Americans.
+- As a user, I want to take a fun quiz to test my knowledge about the presidential candidates.
+- As a user, I want to participate in discussions about the 2024 Presidential Election.
 
 ## Strategy
 
-The goal of this project is to create an informative and engaging website about Kundalini Yoga. The website should appeal to users who are interested in yoga, meditation, and personal growth. The primary call-to-action is for users to learn about Kundalini Yoga and its benefits, with a secondary call-to-action to get in touch with the organization.
+The goal of this project is to create an informative and engaging website about the 2024 Presidential Election. The website should appeal to users who are interested in politics and enjoy humor. The primary call-to-action is for users to vote for their preferred candidate, with a secondary call-to-action to take quizzes and participate in discussions which will be featured in a later update due to the complexity of databases and of course, issues with Node.js and MongoDB which I did try to incorporate into the website but went down a rabbit hole, but for future updates I will incorporate the community features and will create login forms and servers where a community can engage with other members.
+
 
 ## Scope
-
 The scope of this project includes:
 
-- Designing and developing a responsive website using HTML, CSS, and Font Awesome
-- Creating a clean and calming layout with easy-to-read typography and a soothing color scheme
-- Providing information about Kundalini Yoga, its origins, benefits, and practices
-- Allowing users to contact the Kundalini Yoga organization
+- Designing and developing a responsive website using HTML, CSS, and JavaScript
+- Creating a clean and humorous layout with easy-to-read typography
+- Allowing users to vote (for Fun not real-time polls), take quizzes, and participate in discussions I will release the community feature at a later date
+
 
 ### Structure
 The website has a simple structure for ease of navigation:
-- **Header**: Contains navigation links.
-- **Main**: Features a hero image and sections for content.
-- **Footer**: Includes social media links and copyright information.
-
-### Wireframes
-- [Home Page Wireframe](assets/images/indexwf.jpeg)
-- [Yoga Page Wireframe](assets/images/yogawf.jpeg)
-- [Contact Page Wireframe](assets/images/contactwf.jpeg)
-
+- Header: Contains navigation links.
+- Main: Features sections for content including voting, quizzes, and discussions.
+- Footer: Includes social media links and contact information. Regarding social  media, the links to the social media are there but I have not yet got around to making the social media profiles.
   
-  
-
-
 
 ## Surface
 
 The surface of the website includes:
 
-- Typography: Arial, sans-serif
-- Colors: #f4f4f4 (background), #333 (text), #fff (social media icons)
-- Imagery: A hero image of a yoga pose
-- Design: Clean and calming layout with easy-to-read typography and a soothing color scheme
+Typography: Arial, sans-serif
+Colors: #f4f4f4 (background), #333 (text), #fff (social media icons)
+Imagery: A hero image related to the presidential election
+Design: Clean and humorous layout with easy-to-read typography
+
 
 ## Typography
 
@@ -122,7 +110,7 @@ The color scheme includes:
 - **Font Awesome**: For icons.
 - **GitHub**: For hosting and version control.
 - **Google Fonts**: For custom fonts.
-- **Chrome DevTools**: For debugging and testing.
+- **Chrome DevTools**: For debugging and testing.c
 
 ## Deployment
 
