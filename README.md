@@ -1,4 +1,4 @@
- # [Live Site]([https://tootechnical.github.io/RighteousResurgence/]) <!-- Replace # with your live site link -->
+ [https://tootechnical.github.io/RighteousResurgence] <!-- Replace # with your live site link -->
 
 ## Brief Introduction
 
