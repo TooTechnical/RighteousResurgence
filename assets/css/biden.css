@@ -1,212 +1,216 @@
-/* Set height to 100% for html and body to ensure the full height is used */
-html, body {
-    height: 100%;
+/* assets/css/biden.css */
+/* General styles */
+body {
+    font-family: 'Open Sans', sans-serif;
     margin: 0;
-    display: flex;
-    flex-direction: column; /* Arrange child elements in a column */
+    padding: 0;
+    background-color: #f8f9fa;
+    color: #333;
 }
 
-/* Wrapper to contain the main structure of the page */
-.wrapper {
-    flex: 1; /* Allows the wrapper to expand and take available space */
-    display: flex;
-    flex-direction: column; /* Arrange child elements in a column */
-}
-
-/* Header styles */
 header {
-    width: 100%; /* Full width of the header */
+    background-color: #007bff;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
 }
 
-/* Styling for the content inside the header */
-.header-content {
-    background-color: #333; /* Dark grey background */
-    color: white; /* White text color */
-    padding: 10px 0; /* Vertical padding */
-    text-align: center; /* Center-align text */
-    box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* Subtle shadow for depth */
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
 }
 
-/* Header title styles */
-.header-content h1 {
-    margin: 0; /* Remove default margin */
-    font-size: 2em; /* Larger font size */
-    font-family: 'Arial', sans-serif; /* Arial font */
-    text-transform: uppercase; /* Uppercase text */
-    letter-spacing: 2px; /* Spacing between letters */
+header p {
+    margin: 5px 0 20px;
+    font-size: 1.2em;
 }
 
-/* Navigation styles */
 nav ul {
-    list-style: none; /* Remove default list styling */
-    padding: 0; /* Remove default padding */
-    margin: 0; /* Remove default margin */
-    display: flex; /* Flexbox for horizontal alignment */
-    justify-content: center; /* Center align the items */
-    background-color: #444; /* Dark grey background */
-    box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* Subtle shadow for depth */
+    list-style-type: none;
+    padding: 0;
 }
 
-/* Navigation list item styles */
 nav ul li {
-    margin: 0 15px; /* Horizontal margin between items */
+    display: inline;
+    margin: 0 10px;
 }
 
-/* Navigation link styles */
 nav ul li a {
-    color: white; /* White text color */
-    text-decoration: none; /* Remove underline */
-    font-weight: bold; /* Bold text */
-    padding: 10px 15px; /* Padding around the text */
-    display: block; /* Block display for full clickable area */
-    transition: background-color 0.3s; /* Smooth background color transition */
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
 }
 
-/* Navigation link hover state */
-nav ul li a:hover {
-    background-color: #555; /* Slightly darker background on hover */
-}
-
-/* Header video container */
 .header-video {
-    display: flex; /* Flexbox for alignment */
-    justify-content: center; /* Center align the video */
-    padding: 20px; /* Padding around the video */
-    background-color: #000; /* Black background */
+    margin: 20px auto;
+    max-width: 100%;
+    width: 700px;
 }
 
-/* Styling for the embedded video */
 .header-video iframe {
-    width: 700px; /* Fixed width */
-    height: 400px; /* Fixed height */
-    border: none; /* Remove border */
+    width: 100%;
+    height: 400px;
+    border: none;
 }
 
-/* Main content styling */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
 main {
-    flex: 1; /* Expand to fill available space */
-    padding: 20px; /* Padding around the content */
+    padding: 20px 0;
 }
 
-/* Tile container for gaffes */
-.tile-container {
-    display: flex; /* Flexbox for alignment */
-    flex-wrap: wrap; /* Wrap tiles to the next line */
-    justify-content: center; /* Center align the tiles */
-    gap: 20px; /* Space between tiles */
-    padding: 20px; /* Padding around the container */
+.quiz-container {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 600px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-/* Individual tile styles */
-.tile {
-    background-color: #1e90ff; /* Democratic blue background */
-    color: white; /* White text color */
-    padding: 20px; /* Padding inside the tile */
-    border-radius: 10px; /* Rounded corners */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-    width: calc(33% - 40px); /* Responsive width with space between */
-    box-sizing: border-box; /* Include padding in width calculation */
-    text-align: center; /* Center align text */
+.quiz-container h2 {
+    text-align: center;
+    color: #007bff;
 }
 
-/* Tile heading styles */
-.tile h3 {
-    margin-top: 0; /* Remove top margin */
+.quiz-container #quiz {
+    margin-bottom: 20px;
 }
 
-/* Tile paragraph styles */
-.tile p {
-    margin: 10px 0 0 0; /* Top margin, no side or bottom margin */
+.quiz-container button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    cursor: pointer;
 }
 
-/* Footer styling */
+.quiz-container button:hover {
+    background-color: #0056b3;
+}
+
+#result {
+    margin-top: 20px;
+    font-size: 1.2em;
+    text-align: center;
+}
+
+/* Footer styles */
 footer {
-    background-color: #333; /* Dark grey background */
-    color: white; /* White text color */
-    padding: 20px 0; /* Vertical padding */
-    margin-top: auto; /* Push footer to the bottom */
+    background-color: #343a40;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
 }
 
-/* Footer container to hold different sections */
 .footer-container {
-    display: flex; /* Flexbox for alignment */
-    justify-content: space-around; /* Space around items */
-    flex-wrap: wrap; /* Wrap items to the next line */
-    max-width: 1200px; /* Maximum width */
-    margin: 0 auto; /* Center align */
-    padding: 20px; /* Padding around the container */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px 0;
 }
 
-/* Footer section styles */
-.footer-container > div {
-    flex: 1; /* Flexible width */
-    margin: 10px; /* Margin around each section */
-    min-width: 200px; /* Minimum width */
+.footer-section {
+    flex: 1;
+    padding: 10px;
+    min-width: 250px;
+    max-width: 300px;
 }
 
-/* Individual footer sections */
-.footer-left, .footer-center, .footer-right {
-    padding: 10px; /* Padding inside each section */
+.footer-section h4 {
+    margin-top: 0;
+    color: #f8f9fa;
+    font-size: 1.2em;
+    border-bottom: 2px solid #007bff;
+    padding-bottom: 5px;
 }
 
-/* Footer section headings */
-.footer-left h4, .footer-center h4, .footer-right h4 {
-    margin-bottom: 10px; /* Bottom margin */
-    color: #ffdd57; /* Gold color for headings */
+.footer-section p, .footer-section ul {
+    font-size: 0.9em;
 }
 
-/* Footer paragraphs and lists */
-.footer-left p, .footer-center ul, .footer-right ul {
-    margin: 0; /* Remove default margin */
-    padding: 0; /* Remove default padding */
-    list-style: none; /* Remove default list styling */
+.footer-section ul {
+    list-style-type: none;
+    padding: 0;
 }
 
-/* Footer list items */
-.footer-center ul li, .footer-right ul li {
-    margin-bottom: 5px; /* Space between items */
+.footer-section ul li {
+    margin: 10px 0;
 }
 
-/* Social media list in the footer */
-.footer-right .social-media {
-    display: flex; /* Flexbox for alignment */
-    flex-direction: column; /* Stack items vertically */
+.footer-section ul li a {
+    color: #007bff;
+    text-decoration: none;
 }
 
-/* Social media list items */
-.footer-right .social-media li {
-    margin-bottom: 5px; /* Space between items */
+.footer-section ul li a:hover {
+    text-decoration: underline;
 }
 
-/* Social media links */
-.footer-right .social-media li a {
-    color: #ffdd57; /* Gold color for links */
-    text-decoration: none; /* Remove underline */
-    transition: color 0.3s; /* Smooth color transition */
+.social-media {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
 }
 
-/* Social media links hover state */
-.footer-right .social-media li a:hover {
-    color: #fff; /* White color on hover */
+.social-media li {
+    list-style-type: none;
 }
 
-/* Bottom part of the footer */
+.social-media li a {
+    color: #007bff;
+    text-decoration: none;
+    font-size: 1.5em;
+}
+
+.social-media li a:hover {
+    color: #0056b3;
+}
+
 .footer-bottom {
-    text-align: center; /* Center align text */
-    margin-top: 20px; /* Top margin */
-    border-top: 1px solid #444; /* Top border */
-    padding-top: 10px; /* Padding above the text */
-    color: #aaa; /* Light grey color */
+    background-color: #23272b;
+    padding: 10px 0;
 }
 
-/* Responsive adjustments for smaller screens */
+.footer-bottom p {
+    margin: 0;
+    font-size: 0.9em;
+}
+
+/* Responsive Styles */
 @media (max-width: 768px) {
-    .footer-container {
-        flex-direction: column; /* Stack footer sections vertically */
-        text-align: center; /* Center align text */
+    header h1 {
+        font-size: 2em;
     }
 
-    .tile {
-        width: calc(100% - 40px); /* Full width for tiles on small screens */
+    .header-video iframe {
+        height: 300px;
+    }
+
+    .quiz-container {
+        width: 90%;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-section {
+        text-align: center;
+        padding: 20px;
+    }
+
+    .footer-bottom p {
+        font-size: 0.8em;
     }
 }
