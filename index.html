@@ -1,89 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Righteous Resurgence</title>
-    <link rel="stylesheet" href="assets/css/styles.css">
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <!-- Meta tags for character set and viewport settings -->
+    <meta charset="UTF-8"> <!-- Specifies the character encoding for the HTML document -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Ensures proper scaling and rendering on different devices -->
+    <title>Righteous Resurgence</title> <!-- Sets the title of the webpage -->
+    <link rel="stylesheet" href="assets/css/styles.css"> <!-- Links to the external CSS file for styling -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> <!-- Links to the Chart.js library for creating charts -->
 </head>
 <body>
-    <div class="wrapper">
+    <div class="wrapper"> <!-- Main wrapper div to contain the page content -->
         <header>
-            <div class="header-content">
-                <h1>Righteous Resurgence</h1>
-                <nav>
+            <div class="header-content"> <!-- Div to style the header content -->
+                <h1>Righteous Resurgence</h1> <!-- Main heading for the page -->
+                <nav> <!-- Navigation bar -->
                     <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="biden-gaffes.html">Sleepy Joe</a></li>
-                        <li><a href="quiz.html">Quiz</a></li>
+                        <li><a href="index.html">Home</a></li> <!-- Link to the Home page -->
+                        <li><a href="biden-gaffes.html">Sleepy Joe</a></li> <!-- Link to the Biden Gaffes page -->
+                        <li><a href="quiz.html">Quiz</a></li> <!-- Link to the Quiz page -->
                     </ul>
                 </nav>
             </div>
-            <div class="header-image">
-                <img src="assets/images/trump8.webp" alt="Trump Rally">
+            <div class="header-image"> <!-- Div to contain the header image -->
+                <img src="assets/images/trump8.webp" alt="Trump Rally"> <!-- Image of a Trump rally -->
             </div>
         </header>
 
         <main>
             <section id="home">
-                <div class="content-container">
-                    <h2>Welcome To The Who Do You Think Is Going To Win The 2024 Presidential Election</h2>
-                    <p>Welcome to our comedy corner where you can cast your vote and have a laugh. Who do you think will win the 2024 Presidential Election: the ever-dynamic Donald Trump or Sleepy Joe Biden? Cast your vote and see where you stand among fellow Americans!</p>
-                    <p>Watch out for Joe Biden's next campaign speech! Will he remember what state he's in this time, or will we be treated to another round of "Where am I?" Guess we'll have to wait and see!</p>
-                    <p>Meanwhile, Donald Trump is already planning his next sharp-dressed rally, making sure every hair is in place. They say you can judge a man by his ties, and Trump's are always on point!</p>
+                <div class="content-container"> <!-- Container for the main content -->
+                    <h2>Welcome To The Who Do You Think Is Going To Win The 2024 Presidential Election</h2> <!-- Section heading -->
+                    <p>Welcome to our comedy corner where you can cast your vote and have a laugh. Who do you think will win the 2024 Presidential Election: the ever-dynamic Donald Trump or Sleepy Joe Biden? Cast your vote and see where you stand among fellow Americans!</p> <!-- Introductory paragraph -->
+                    <p>Watch out for Joe Biden's next campaign speech! Will he remember what state he's in this time, or will we be treated to another round of "Where am I?" Guess we'll have to wait and see!</p> <!-- Humorous paragraph about Joe Biden -->
+                    <p>Meanwhile, Donald Trump is already planning his next sharp-dressed rally, making sure every hair is in place. They say you can judge a man by his ties, and Trump's are always on point!</p> <!-- Humorous paragraph about Donald Trump -->
                 </div>
             </section>
 
-            <section id="chart-section" style="float: right; width: 40%; padding: 20px;">
-                <h2>Probability Analysis</h2>
-                <canvas id="probabilityChart"></canvas>
+            <section id="chart-section" style="float: right; width: 40%; padding: 20px;"> <!-- Section for the probability analysis chart -->
+                <h2>Probability Analysis</h2> <!-- Section heading -->
+                <canvas id="probabilityChart"></canvas> <!-- Canvas element for the Chart.js pie chart -->
             </section>
 
             <section id="forum">
-                <h2>Discussion Forum</h2>
-                <form id="userInputForm">
-                    <label for="candidate">Who do you think will win?</label>
-                    <select id="candidate" name="candidate">
-                        <option value="Biden">Joe Biden</option>
-                        <option value="Trump">Donald Trump</option>
+                <h2>Discussion Forum</h2> <!-- Section heading -->
+                <form id="userInputForm"> <!-- Form for user input -->
+                    <label for="candidate">Who do you think will win?</label> <!-- Form label -->
+                    <select id="candidate" name="candidate"> <!-- Dropdown for selecting a candidate -->
+                        <option value="Biden">Joe Biden</option> <!-- Option for Joe Biden -->
+                        <option value="Trump">Donald Trump</option> <!-- Option for Donald Trump -->
                     </select>
-                    <button type="submit">Submit</button>
+                    <button type="submit">Submit</button> <!-- Submit button for the form -->
                 </form>
-                <div id="results"></div>
+                <div id="results"></div> <!-- Div to display the results -->
             </section>
         </main>
 
         <footer>
-            <div class="footer-container">
-                <div class="footer-left">
-                    <h4>About Us</h4>
-                    <p>Righteous Resurgence provides a fun interactive pie chart where you can choose which candidate is going to win the 2024 presidential election.</p>
+            <div class="footer-container"> <!-- Container div for footer sections -->
+                <div class="footer-left"> <!-- Left section of the footer -->
+                    <h4>About Us</h4> <!-- Footer heading for the About Us section -->
+                    <p>Righteous Resurgence provides a fun interactive pie chart where you can choose which candidate is going to win the 2024 presidential election.</p> <!-- Description text for the About Us section -->
                 </div>
-                <div class="footer-center">
-                    <h4>Contact Us</h4>
-                    <ul>
-                        <li>Email: dillonsmalone@gmail.com</li>
-                        <li>Phone: +353852582215</li>
-                        <li>Address: Trump Tower and 100% certain that our savior and President Donald Trump will be in the Oval Office after the election</li>
+                <div class="footer-center"> <!-- Center section of the footer -->
+                    <h4>Contact Us</h4> <!-- Footer heading for the Contact Us section -->
+                    <ul> <!-- List of contact details -->
+                        <li>Email: dillonsmalone@gmail.com</li> <!-- Email contact -->
+                        <li>Phone: +353852582215</li> <!-- Phone contact -->
+                        <li>Address: Trump Tower and 100% certain that our savior and President Donald Trump will be in the Oval Office after the election</li> <!-- Address contact -->
                     </ul>
                 </div>
-                <div class="footer-right">
-                    <h4>Follow Us</h4>
-                    <p>Join the resurgence of Donald Trump as President! Stay connected and get the latest updates:</p>
-                    <ul class="social-media">
-                        <li><a href="https://facebook.com" target="_blank">Facebook</a></li>
-                        <li><a href="https://twitter.com" target="_blank">Twitter</a></li>
-                        <li><a href="https://instagram.com" target="_blank">Instagram</a></li>
-                        <li><a href="https://linkedin.com" target="_blank">LinkedIn</a></li>
+                <div class="footer-right"> <!-- Right section of the footer -->
+                    <h4>Follow Us</h4> <!-- Footer heading for the Follow Us section -->
+                    <p>Join the resurgence of Donald Trump as President! Stay connected and get the latest updates:</p> <!-- Call to action for following on social media -->
+                    <ul class="social-media"> <!-- List of social media links -->
+                        <li><a href="https://facebook.com" target="_blank">Facebook</a></li> <!-- Link to Facebook page -->
+                        <li><a href="https://twitter.com" target="_blank">Twitter</a></li> <!-- Link to Twitter page -->
+                        <li><a href="https://instagram.com" target="_blank">Instagram</a></li> <!-- Link to Instagram page -->
+                        <li><a href="https://linkedin.com" target="_blank">LinkedIn</a></li> <!-- Link to LinkedIn page -->
                     </ul>
                 </div>
             </div>
-            <div class="footer-bottom">
-                <p>© 2024 Righteous Resurgence. All rights reserved.</p>
+            <div class="footer-bottom"> <!-- Bottom section of the footer -->
+                <p>© 2024 Righteous Resurgence. All rights reserved.</p> <!-- Footer copyright text -->
             </div>
         </footer>
     </div>
-    <script src="assets/js/scripts.js"></script>
+    <script src="assets/js/scripts.js"></script> <!-- Links to the external JavaScript file -->
 </body>
 </html>

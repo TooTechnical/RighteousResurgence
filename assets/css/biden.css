@@ -1,183 +1,212 @@
+/* Set height to 100% for html and body to ensure the full height is used */
 html, body {
     height: 100%;
     margin: 0;
     display: flex;
-    flex-direction: column;
+    flex-direction: column; /* Arrange child elements in a column */
 }
 
+/* Wrapper to contain the main structure of the page */
 .wrapper {
-    flex: 1;
+    flex: 1; /* Allows the wrapper to expand and take available space */
     display: flex;
-    flex-direction: column;
+    flex-direction: column; /* Arrange child elements in a column */
 }
 
+/* Header styles */
 header {
-    width: 100%;
+    width: 100%; /* Full width of the header */
 }
 
+/* Styling for the content inside the header */
 .header-content {
-    background-color: #333;
-    color: white;
-    padding: 10px 0;
-    text-align: center;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    background-color: #333; /* Dark grey background */
+    color: white; /* White text color */
+    padding: 10px 0; /* Vertical padding */
+    text-align: center; /* Center-align text */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* Subtle shadow for depth */
 }
 
+/* Header title styles */
 .header-content h1 {
-    margin: 0;
-    font-size: 2em;
-    font-family: 'Arial', sans-serif;
-    text-transform: uppercase;
-    letter-spacing: 2px;
+    margin: 0; /* Remove default margin */
+    font-size: 2em; /* Larger font size */
+    font-family: 'Arial', sans-serif; /* Arial font */
+    text-transform: uppercase; /* Uppercase text */
+    letter-spacing: 2px; /* Spacing between letters */
 }
 
+/* Navigation styles */
 nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    justify-content: center;
-    background-color: #444;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    list-style: none; /* Remove default list styling */
+    padding: 0; /* Remove default padding */
+    margin: 0; /* Remove default margin */
+    display: flex; /* Flexbox for horizontal alignment */
+    justify-content: center; /* Center align the items */
+    background-color: #444; /* Dark grey background */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* Subtle shadow for depth */
 }
 
+/* Navigation list item styles */
 nav ul li {
-    margin: 0 15px;
+    margin: 0 15px; /* Horizontal margin between items */
 }
 
+/* Navigation link styles */
 nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-    padding: 10px 15px;
-    display: block;
-    transition: background-color 0.3s;
+    color: white; /* White text color */
+    text-decoration: none; /* Remove underline */
+    font-weight: bold; /* Bold text */
+    padding: 10px 15px; /* Padding around the text */
+    display: block; /* Block display for full clickable area */
+    transition: background-color 0.3s; /* Smooth background color transition */
 }
 
+/* Navigation link hover state */
 nav ul li a:hover {
-    background-color: #555;
+    background-color: #555; /* Slightly darker background on hover */
 }
 
+/* Header video container */
 .header-video {
-    display: flex;
-    justify-content: center;
-    padding: 20px;
-    background-color: #000;
+    display: flex; /* Flexbox for alignment */
+    justify-content: center; /* Center align the video */
+    padding: 20px; /* Padding around the video */
+    background-color: #000; /* Black background */
 }
 
+/* Styling for the embedded video */
 .header-video iframe {
-    width: 700px;
-    height: 400px;
-    border: none;
+    width: 700px; /* Fixed width */
+    height: 400px; /* Fixed height */
+    border: none; /* Remove border */
 }
 
+/* Main content styling */
 main {
-    flex: 1;
-    padding: 20px;
+    flex: 1; /* Expand to fill available space */
+    padding: 20px; /* Padding around the content */
 }
 
+/* Tile container for gaffes */
 .tile-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-    padding: 20px;
+    display: flex; /* Flexbox for alignment */
+    flex-wrap: wrap; /* Wrap tiles to the next line */
+    justify-content: center; /* Center align the tiles */
+    gap: 20px; /* Space between tiles */
+    padding: 20px; /* Padding around the container */
 }
 
+/* Individual tile styles */
 .tile {
-    background-color: #1e90ff; /* Democratic blue */
-    color: white;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    width: calc(33% - 40px); /* Adjust width as needed */
-    box-sizing: border-box;
-    text-align: center;
+    background-color: #1e90ff; /* Democratic blue background */
+    color: white; /* White text color */
+    padding: 20px; /* Padding inside the tile */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    width: calc(33% - 40px); /* Responsive width with space between */
+    box-sizing: border-box; /* Include padding in width calculation */
+    text-align: center; /* Center align text */
 }
 
+/* Tile heading styles */
 .tile h3 {
-    margin-top: 0;
+    margin-top: 0; /* Remove top margin */
 }
 
+/* Tile paragraph styles */
 .tile p {
-    margin: 10px 0 0 0;
+    margin: 10px 0 0 0; /* Top margin, no side or bottom margin */
 }
 
+/* Footer styling */
 footer {
-    background-color: #333;
-    color: white;
-    padding: 20px 0;
-    margin-top: auto; /* This makes sure the footer stays at the bottom */
+    background-color: #333; /* Dark grey background */
+    color: white; /* White text color */
+    padding: 20px 0; /* Vertical padding */
+    margin-top: auto; /* Push footer to the bottom */
 }
 
+/* Footer container to hold different sections */
 .footer-container {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
+    display: flex; /* Flexbox for alignment */
+    justify-content: space-around; /* Space around items */
+    flex-wrap: wrap; /* Wrap items to the next line */
+    max-width: 1200px; /* Maximum width */
+    margin: 0 auto; /* Center align */
+    padding: 20px; /* Padding around the container */
 }
 
+/* Footer section styles */
 .footer-container > div {
-    flex: 1;
-    margin: 10px;
-    min-width: 200px;
+    flex: 1; /* Flexible width */
+    margin: 10px; /* Margin around each section */
+    min-width: 200px; /* Minimum width */
 }
 
+/* Individual footer sections */
 .footer-left, .footer-center, .footer-right {
-    padding: 10px;
+    padding: 10px; /* Padding inside each section */
 }
 
+/* Footer section headings */
 .footer-left h4, .footer-center h4, .footer-right h4 {
-    margin-bottom: 10px;
-    color: #ffdd57; /* Gold color for headers */
+    margin-bottom: 10px; /* Bottom margin */
+    color: #ffdd57; /* Gold color for headings */
 }
 
+/* Footer paragraphs and lists */
 .footer-left p, .footer-center ul, .footer-right ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    list-style: none; /* Remove default list styling */
 }
 
+/* Footer list items */
 .footer-center ul li, .footer-right ul li {
-    margin-bottom: 5px;
+    margin-bottom: 5px; /* Space between items */
 }
 
+/* Social media list in the footer */
 .footer-right .social-media {
-    display: flex;
-    flex-direction: column;
+    display: flex; /* Flexbox for alignment */
+    flex-direction: column; /* Stack items vertically */
 }
 
+/* Social media list items */
 .footer-right .social-media li {
-    margin-bottom: 5px;
+    margin-bottom: 5px; /* Space between items */
 }
 
+/* Social media links */
 .footer-right .social-media li a {
     color: #ffdd57; /* Gold color for links */
-    text-decoration: none;
-    transition: color 0.3s;
+    text-decoration: none; /* Remove underline */
+    transition: color 0.3s; /* Smooth color transition */
 }
 
+/* Social media links hover state */
 .footer-right .social-media li a:hover {
-    color: #fff;
+    color: #fff; /* White color on hover */
 }
 
+/* Bottom part of the footer */
 .footer-bottom {
-    text-align: center;
-    margin-top: 20px;
-    border-top: 1px solid #444;
-    padding-top: 10px;
-    color: #aaa;
+    text-align: center; /* Center align text */
+    margin-top: 20px; /* Top margin */
+    border-top: 1px solid #444; /* Top border */
+    padding-top: 10px; /* Padding above the text */
+    color: #aaa; /* Light grey color */
 }
 
+/* Responsive adjustments for smaller screens */
 @media (max-width: 768px) {
     .footer-container {
-        flex-direction: column;
-        text-align: center;
+        flex-direction: column; /* Stack footer sections vertically */
+        text-align: center; /* Center align text */
     }
 
     .tile {
-        width: calc(100% - 40px); /* Full width for small screens */
+        width: calc(100% - 40px); /* Full width for tiles on small screens */
     }
 }
