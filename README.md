@@ -218,7 +218,17 @@ More details on these steps are available in the GitHub documentation.
   - - ![validation test](assets/images/contactformvaledation.png)
    
     - - ## lighthouse :
-  - - ![validation test](assets/images/lh1.png)
+  - - ![Lighthouse Testing](assets/images/lh1.png)
+  - - ![Lighthouse Testing](assets/images/lh2.png)
+  - - ![Lighthouse Testing](assets/images/lh3.png)
+  - - ![Lighthouse Testing](assets/images/lh4.png)
+  - - ![Lighthouse Testing](assets/images/lh5.png)
+  - - ![Lighthouse Testing](assets/images/lh6.png)
+  - - ![Lighthouse Testing](assets/images/lh7.png)
+  - - ![Lighthouse Testing](assets/images/lh8.png)
+  - - ![Lighthouse Testing](assets/images/lh9.png)
+  - - ![Lighthouse Testing](assets/images/lh10.png)
+  - - ![Lighthouse Testing](assets/images/lh11.png)
 
 
 ## Credits
