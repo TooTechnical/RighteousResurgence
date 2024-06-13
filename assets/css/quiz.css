@@ -13,67 +13,47 @@ html, body {
     flex-direction: column; /* Arrange child elements in a column */
 }
 
-/* Header styles */
 header {
-    width: 100%; /* Full width of the header */
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
 }
 
-/* Styling for the content inside the header */
-.header-content {
-    background-color: #333; /* Dark grey background */
-    color: white; /* White text color */
-    padding: 10px 0; /* Vertical padding */
-    text-align: center; /* Center-align text */
-    box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* Subtle shadow for depth */
+header h1 {
+    margin: 0;
+    font-size: 2em;
+    font-family: 'Arial', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
 }
 
-/* Header title styles */
-.header-content h1 {
-    margin: 0; /* Remove default margin */
-    font-size: 2em; /* Larger font size */
-    font-family: 'Arial', sans-serif; /* Arial font */
-    text-transform: uppercase; /* Uppercase text */
-    letter-spacing: 2px; /* Spacing between letters */
-}
-
-/* Navigation styles */
 nav ul {
-    list-style: none; /* Remove default list styling */
-    padding: 0; /* Remove default padding */
-    margin: 0; /* Remove default margin */
-    display: flex; /* Flexbox for horizontal alignment */
-    justify-content: center; /* Center align the items */
-    background-color: #444; /* Dark grey background */
-    box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* Subtle shadow for depth */
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    background-color: #444;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
 }
 
-/* Navigation list item styles */
 nav ul li {
-    margin: 0 15px; /* Horizontal margin between items */
+    margin: 0 15px;
 }
 
-/* Navigation link styles */
 nav ul li a {
-    color: white; /* White text color */
-    text-decoration: none; /* Remove underline */
-    font-weight: bold; /* Bold text */
-    padding: 10px 15px; /* Padding around the text */
-    display: block; /* Block display for full clickable area */
-    transition: background-color 0.3s; /* Smooth background color transition */
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 15px;
+    display: block;
+    transition: background-color 0.3s;
 }
 
-/* Navigation link hover state */
 nav ul li a:hover {
-    background-color: #555; /* Slightly darker background on hover */
-}
-
-/* Styles for the header image */
-.header-image img {
-    width: 100%; /* Full width */
-    height: auto; /* Maintain aspect ratio */
-    display: block; /* Display as a block element */
-    margin: 0; /* Remove default margin */
-    padding: 0; /* Remove default padding */
+    background-color: #555;
 }
 
 /* Main content styling */
@@ -82,161 +62,165 @@ main {
     padding: 20px; /* Padding around the content */
 }
 
-/* Quiz section container */
+#home .content-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+    background-color: #b5a4a45c;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#chart-section .content-container {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
 #quiz-section .content-container {
-    max-width: 800px; /* Maximum width */
-    margin: 0 auto; /* Center align */
-    padding: 20px; /* Padding inside the container */
-    text-align: center; /* Center align text */
-    background-color: #f9f9f9; /* Light grey background */
-    border-radius: 10px; /* Rounded corners */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-/* Quiz container styling */
 #quiz-container {
-    margin: 20px auto; /* Center align with vertical margin */
-    width: 60%; /* 60% width */
-    padding: 20px; /* Padding inside the container */
-    border: 2px solid #333; /* Dark grey border */
-    border-radius: 10px; /* Rounded corners */
-    background-color: #f9f9f9; /* Light grey background */
+    margin: 20px auto;
+    width: 60%;
+    padding: 20px;
+    border: 2px solid #333;
+    border-radius: 10px;
+    background-color: #f9f9f9;
 }
 
-/* Question styling */
 #question {
-    font-size: 1.5em; /* Larger font size */
-    margin-bottom: 20px; /* Bottom margin */
+    font-size: 1.5em;
+    margin-bottom: 20px;
 }
 
-/* Options container styling */
 #options {
-    display: flex; /* Flexbox for alignment */
-    flex-direction: column; /* Stack options vertically */
+    display: flex;
+    flex-direction: column;
 }
 
-/* Individual option styling */
 .option {
-    margin: 10px 0; /* Vertical margin */
-    padding: 10px; /* Padding inside the option */
-    background-color: #00AEF3; /* Blue background */
-    color: white; /* White text color */
-    border: none; /* No border */
-    border-radius: 5px; /* Rounded corners */
-    cursor: pointer; /* Pointer cursor on hover */
+    margin: 10px 0;
+    padding: 10px;
+    background-color: #00AEF3;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
 }
 
-/* Option hover state */
 .option:hover {
-    background-color: #007bb5; /* Darker blue on hover */
+    background-color: #007bb5;
 }
 
-/* Result display styling */
 #result {
-    margin-top: 20px; /* Top margin */
-    font-size: 1.2em; /* Larger font size */
+    margin-top: 20px;
+    font-size: 1.2em;
 }
 
-/* Next button styling */
 #next-btn {
-    margin-top: 20px; /* Top margin */
-    padding: 10px 20px; /* Padding inside the button */
-    background-color: #E81B23; /* Red background */
-    color: white; /* White text color */
-    border: none; /* No border */
-    border-radius: 5px; /* Rounded corners */
-    cursor: pointer; /* Pointer cursor on hover */
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #E81B23;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
 }
 
-/* Next button hover state */
 #next-btn:hover {
-    background-color: #b51118; /* Darker red on hover */
+    background-color: #b51118;
 }
 
-/* Footer styling */
 footer {
-    background-color: #333; /* Dark grey background */
-    color: white; /* White text color */
-    padding: 20px 0; /* Vertical padding */
-    margin-top: auto; /* Push footer to the bottom */
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    margin-top: auto;
 }
 
-/* Footer container to hold different sections */
 .footer-container {
-    display: flex; /* Flexbox for alignment */
-    justify-content: space-around; /* Space around items */
-    flex-wrap: wrap; /* Wrap items to the next line */
-    max-width: 1200px; /* Maximum width */
-    margin: 0 auto; /* Center align */
-    padding: 20px; /* Padding around the container */
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
 }
 
-/* Footer section styles */
 .footer-container > div {
-    flex: 1; /* Flexible width */
-    margin: 10px; /* Margin around each section */
-    min-width: 200px; /* Minimum width */
+    flex: 1;
+    margin: 10px;
+    min-width: 250px;
+    max-width: 300px;
 }
 
-/* Individual footer sections */
 .footer-left, .footer-center, .footer-right {
-    padding: 10px; /* Padding inside each section */
+    padding: 10px;
 }
 
-/* Footer section headings */
 .footer-left h4, .footer-center h4, .footer-right h4 {
-    margin-bottom: 10px; /* Bottom margin */
-    color: #ffdd57; /* Gold color for headings */
+    margin-bottom: 10px;
+    color: #007bff;
+    border-bottom: 2px solid #007bff;
+    padding-bottom: 5px;
 }
 
-/* Footer paragraphs and lists */
 .footer-left p, .footer-center ul, .footer-right ul {
-    margin: 0; /* Remove default margin */
-    padding: 0; /* Remove default padding */
-    list-style: none; /* Remove default list styling */
+    margin: 0;
+    padding: 0;
+    list-style: none;
 }
 
-/* Footer list items */
 .footer-center ul li, .footer-right ul li {
-    margin-bottom: 5px; /* Space between items */
+    margin-bottom: 10px;
 }
 
-/* Social media list in the footer */
 .footer-right .social-media {
-    display: flex; /* Flexbox for alignment */
-    flex-direction: column; /* Stack items vertically */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 15px;
 }
 
-/* Social media list items */
 .footer-right .social-media li {
-    margin-bottom: 5px; /* Space between items */
+    margin-bottom: 5px;
 }
 
-/* Social media links */
 .footer-right .social-media li a {
-    color: #ffdd57; /* Gold color for links */
-    text-decoration: none; /* Remove underline */
-    transition: color 0.3s; /* Smooth color transition */
+    color: #007bff;
+    text-decoration: none;
+    transition: color 0.3s;
+    font-size: 1.5em;
 }
 
-/* Social media links hover state */
 .footer-right .social-media li a:hover {
-    color: #fff; /* White color on hover */
+    color: #fff;
 }
 
-/* Bottom part of the footer */
 .footer-bottom {
-    text-align: center; /* Center align text */
-    margin-top: 20px; /* Top margin */
-    border-top: 1px solid #444; /* Top border */
-    padding-top: 10px; /* Padding above the text */
-    color: #aaa; /* Light grey color */
+    text-align: center;
+    margin-top: 20px;
+    border-top: 1px solid #444;
+    padding-top: 10px;
+    color: #aaa;
 }
 
 /* Responsive adjustments for smaller screens */
 @media (max-width: 768px) {
     .footer-container {
-        flex-direction: column; /* Stack footer sections vertically */
-        text-align: center; /* Center align text */
+        flex-direction: column;
+        text-align: center;
     }
 }

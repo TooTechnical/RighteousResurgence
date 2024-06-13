@@ -85,6 +85,8 @@ const insults = [
     "Even Sleepy Joe knows this one!"
 ];
 
+let lastUsedInsultIndex = null;
+
 document.addEventListener('DOMContentLoaded', () => {
     loadQuiz();
 });
@@ -107,18 +109,31 @@ function loadQuiz() {
     });
 }
 
+function getUniqueInsult() {
+    let insultIndex;
+    do {
+        insultIndex = Math.floor(Math.random() * insults.length);
+    } while (insultIndex === lastUsedInsultIndex);
+    lastUsedInsultIndex = insultIndex;
+    return insults[insultIndex];
+}
+
 function submitQuiz() {
     let score = 0;
-    let resultText = "";
     questions.forEach((question, index) => {
         const selectedOption = document.querySelector(`input[name="question${index}"]:checked`);
         if (selectedOption && parseInt(selectedOption.value) === question.answer) {
             score++;
-        } else {
-            const randomInsult = insults[Math.floor(Math.random() * insults.length)];
-            resultText += `<p>${randomInsult}</p>`;
         }
     });
+
+    let resultText = "";
+    if (score === questions.length) {
+        resultText = `<p>Congratulations! Donald Trump says: "I nominate you as my Vice President!"</p>`;
+    } else {
+        const insult = getUniqueInsult();
+        resultText = `<p>${insult}</p>`;
+    }
     resultText += `<p>Your final score is ${score} out of ${questions.length}</p>`;
     document.getElementById('result').innerHTML = resultText;
 }

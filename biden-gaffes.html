@@ -1,42 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- Meta tags for character set and viewport settings -->
-    <meta charset="UTF-8"> <!-- Specifies the character encoding for the HTML document -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Ensures proper scaling and rendering on different devices -->
-    <title>Presidents Test - Righteous Resurgence</title> <!-- Sets the title of the webpage -->
-    <link rel="stylesheet" href="assets/css/biden.css"> <!-- Links to the external CSS file for styling -->
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet"> <!-- Links to Google Fonts -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Presidents Test - Righteous Resurgence</title>
+    <link rel="stylesheet" href="assets/css/biden.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 <body>
-    <div class="wrapper"> <!-- Main wrapper div to contain the page content -->
+    <div class="wrapper">
         <header>
-            <div class="header-content"> <!-- Div to style the header content -->
-                <h1>Presidents Test</h1> <!-- Main heading for the page -->
-                <nav> <!-- Navigation bar -->
+            <div class="header-content">
+                <h1>Presidents Test</h1>
+                <nav>
                     <ul>
-                        <li><a href="index.html">Home</a></li> <!-- Link to the Home page -->
-                        <li><a href="biden-gaffes.html">Sleepy Joe</a></li> <!-- Link to the Biden Gaffes page -->
-                        <li><a href="quiz.html">Quiz</a></li> <!-- Link to the Quiz page -->
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="biden-gaffes.html">Sleepy Joe</a></li>
+                        <li><a href="quiz.html">Quiz</a></li>
                     </ul>
                 </nav>
             </div>
-            <div class="header-video"> <!-- Div to contain the embedded video -->
-                <iframe width="700" height="400" src="https://www.youtube.com/embed/m3ey2KXJ5kM?si=fsHMjJ_EBQRZwZus&autoplay=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> <!-- Embedded YouTube video with autoplay enabled -->
+            <div class="header-video">
+                <iframe width="700" height="400" src="https://www.youtube.com/embed/m3ey2KXJ5kM?si=fsHMjJ_EBQRZwZus&autoplay=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             </div>
         </header>
-
         <main>
-            <section id="presidents-test" class="quiz-container"> <!-- Section for the Presidents Test quiz -->
-                <h2>Are You Mentally Fit to be President?</h2> <!-- Heading for the quiz section -->
+            <section id="presidents-test" class="quiz-container">
+                <h2>Are You Mentally Fit to be President?</h2>
                 <div id="quiz">
                     <!-- Quiz questions will be dynamically inserted here -->
                 </div>
-                <button id="submit-btn" onclick="submitQuiz()">Submit</button> <!-- Submit button for the quiz -->
-                <div id="result"></div> <!-- Div to display the quiz result and insults -->
+                <button id="submit-btn" onclick="submitQuiz()">Submit</button>
+                <div id="result"></div>
             </section>
         </main>
-
         <footer>
             <div class="footer-container">
                 <div class="footer-section">
@@ -54,10 +52,10 @@
                 <div class="footer-section">
                     <h4>Follow Us</h4>
                     <ul class="social-media">
-                        <li><a href="https://facebook.com" target="_blank">Facebook</a></li>
-                        <li><a href="https://twitter.com" target="_blank">Twitter</a></li>
-                        <li><a href="https://instagram.com" target="_blank">Instagram</a></li>
-                        <li><a href="https://linkedin.com" target="_blank">LinkedIn</a></li>
+                        <li><a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+                        <li><a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                        <li><a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
                     </ul>
                 </div>
             </div>
@@ -65,10 +63,7 @@
                 <p>© 2024 Righteous Resurgence. All rights reserved.</p>
             </div>
         </footer>
-        
-        
     </div>
-
-    <script src="assets/js/presidents-test.js"></script> <!-- Link to the external JavaScript file for the quiz functionality -->
+    <script src="assets/js/presidents-test.js"></script>
 </body>
 </html>
