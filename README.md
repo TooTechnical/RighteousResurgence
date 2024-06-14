@@ -236,12 +236,22 @@ More details on these steps are available in the GitHub documentation.
 ##Validation Testing:
 
 ## Javascript Validation Check:
- - -![multiple device testing](assets/images/jsval1.png)
- - -![multiple device testing](assets/images/jsval2.png)
- - -![multiple device testing](assets/images/jsval3.png)
+ - -![validation](assets/images/jsval1.png)
+ - -![validation](assets/images/jsval2.png)
+ - -![validation](assets/images/jsval3.png)
+
+
+## HTML Validation Check:
+ - -![validation](assets/images/htmlval1.png)
+ - -![validation](assets/images/htmlval2.png)
+ - -![validation](assets/images/htmlval3.png)
 
 
 
+## CSS Validation Check:
+
+ - -![validation](assets/images/css1.png)
+ - -![validation](assets/images/css2.png)
 
 
 ## Credits
