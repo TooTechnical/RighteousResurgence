@@ -195,18 +195,6 @@ The color scheme includes:
 More details on these steps are available in the GitHub documentation.
 
 ## Testing
-
-
-
-**Index HTML Page for desktop view
-
-
-##Validation Testing:
-
-## Index Web Page Validation Check:
-
-
-
 ## lighthouse :
   - - ![Lighthouse Testing](assets/images/lh1.png)
   - - ![Lighthouse Testing](assets/images/lh2.png)
@@ -219,6 +207,41 @@ More details on these steps are available in the GitHub documentation.
   - - ![Lighthouse Testing](assets/images/lh9.png)
   - - ![Lighthouse Testing](assets/images/lh10.png)
   - - ![Lighthouse Testing](assets/images/lh11.png)
+   
+  ## Further Testing on different devices :
+  - -![multiple device testing](assets/images/s1.png)
+  - -![multiple device testing](assets/images/s2.png)
+  - -![multiple device testing](assets/images/s3.png)
+  - -![multiple device testing](assets/images/s4.png)
+  - -![multiple device testing](assets/images/s5.png)
+  - -![multiple device testing](assets/images/s6.png)
+  - -![multiple device testing](assets/images/s7.png)
+  - -![multiple device testing](assets/images/s8.png)
+
+
+
+
+  
+
+
+
+
+
+
+
+
+**Index HTML Page for desktop view
+
+
+##Validation Testing:
+
+## Javascript Validation Check:
+ - -![multiple device testing](assets/images/jsval1.png)
+ - -![multiple device testing](assets/images/jsval2.png)
+ - -![multiple device testing](assets/images/jsval3.png)
+
+
+
 
 
 ## Credits
