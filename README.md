@@ -145,20 +145,15 @@ Here is the color scheme for the provided CSS file:
 - **Navigation Box Shadow**: `rgba(0,0,0,0.2)`
 - **Home Content Container Box Shadow**: `rgba(0, 0, 0, 0.1)`
 
-### Example Color Swatch
-![#f8f9fa](https://www.colorhexa.com/f8f9fa.png)
-![#333](https://www.colorhexa.com/333333.png)
-![#444](https://www.colorhexa.com/444444.png)
-![#555](https://www.colorhexa.com/555555.png)
-![#f9f9f9](https://www.colorhexa.com/f9f9f9.png)
-![#ffdd57](https://www.colorhexa.com/ffdd57.png)
-![#aaa](https://www.colorhexa.com/aaaaaa.png)
-
 ## Imagery
 
 I have not incorparated Imagery and this is due to ongoing bugs that have had negative effects on the javascript, there was some issues with the footer covering up the pie chart and also sometimes the javascript would not work and sync properly to the HTML So i created 2 quizes and included a video to try and compensate. I will however need to spend more time at tweaking the javascript as to make it run more smoother.
 
 ## Design
+### Wireframes
+- [Righteous Resurgence](assets/images/wire1.png)
+- [quiz](assets/images/wire2.png)
+- [sleepy joe](assets/images/wire3.png)
 
 ### Typography
 The website uses Arial, sans-serif for a clean, readable appearance.
@@ -209,15 +204,10 @@ More details on these steps are available in the GitHub documentation.
 ##Validation Testing:
 
 ## Index Web Page Validation Check:
-- ![validation test](assets/images/indexhtmlvalidation.png)
 
-- ## Yoga Web Page Validation Check:
-- - ![validation test](assets/images/yogavalidation.png)
- 
-  - ## Contact Form Validation Check:
-  - - ![validation test](assets/images/contactformvaledation.png)
-   
-    - - ## lighthouse :
+
+
+## lighthouse :
   - - ![Lighthouse Testing](assets/images/lh1.png)
   - - ![Lighthouse Testing](assets/images/lh2.png)
   - - ![Lighthouse Testing](assets/images/lh3.png)
