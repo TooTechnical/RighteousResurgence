@@ -9,7 +9,6 @@ import os
 import dj_database_url
 
 # Whitenoise (for serving static files)
-MIDDLEWARE.insert(1, 'whitenoise.middleware.WhiteNoiseMiddleware')
 
 # Use dj_database_url for database config
 DATABASES['default'] = dj_database_url.config(default=config('DATABASE_URL'))
