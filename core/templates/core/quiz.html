@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+<div class="wrapper">
+    <main>
+
+        <p>Logged in? {{ user.is_authenticated }}</p>
+        <p>Username: {{ user.username }}</p>
+        
+        <section id="quiz">
+            <div class="content-container" id="quiz-container">
+                <h2>Presidential Knowledge Quiz</h2>
+                <p>Test your knowledge about Trump & Biden gaffes, quotes, and legendary soundbites!</p>
+
+                <div id="timer" style="font-weight: bold; margin-bottom: 1rem;">Time left: 5:00</div>
+
+                <h3 id="question">Loading question...</h3>
+
+                <div class="options">
+                    <button class="option" onclick="checkAnswer(0)"></button>
+                    <button class="option" onclick="checkAnswer(1)"></button>
+                    <button class="option" onclick="checkAnswer(2)"></button>
+                    <button class="option" onclick="checkAnswer(3)"></button>
+                </div>
+
+                <div id="result" style="margin-top: 1rem; font-weight: bold;"></div>
+            </div>
+        </section>
+    </main>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script src="{% static 'js/quiz.js' %}"></script>
+{% endblock %}

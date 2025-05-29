@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+  <h1>Latest News & Articles</h1>
+  <ul>
+    {% for article in articles %}
+      <li>
+        <h2>
+          <a href="{% url 'article_detail' slug=article.slug %}">
+            {{ article.title }}
+          </a>
+        </h2>
+        <p><small>By {{ article.author }} on {{ article.created_at|date:"F j, Y" }}</small></p>
+      </li>
+    {% empty %}
+      <li>No articles found.</li>
+    {% endfor %}
+  </ul>
+{% endblock %}

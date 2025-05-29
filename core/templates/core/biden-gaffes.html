@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+<div class="wrapper">
+    <main>
+        <section id="biden-gaffes">
+            <div class="content-container">
+                <h2>Sleepy Joe's Greatest Hits</h2>
+                <p>Brace yourself for a highlight reel of legendary Biden gaffes. These aren’t made up — they’re straight from the teleprompter of destiny!</p>
+
+                <ul class="gaffe-list">
+                    <li>🗣️ “We choose truth over facts.”</li>
+                    <li>🦵 “I got hairy legs that turn blonde in the sun.”</li>
+                    <li>👨‍🏫 “Poor kids are just as bright and just as talented as white kids.”</li>
+                    <li>🇺🇸 “All men and women are created... by the... you know... the thing.”</li>
+                    <li>🐎 “You’re a lying dog-faced pony soldier.”</li>
+                    <li>🗳️ “If you have a problem figuring out whether you’re for me or Trump, then you ain’t Black.”</li>
+                    <li>📍 Forgot which state he was in... more than once.</li>
+                </ul>
+
+                <p style="margin-top: 2rem;">We love democracy, and we also love a bit of comic relief. Thank you, Joe.</p>
+
+                <img src="{% static 'images/biden_confused.jpg' %}" alt="Biden looking confused" style="max-width: 100%; margin-top: 20px;">
+            </div>
+        </section>
+    </main>
+</div>
+{% endblock %}
+

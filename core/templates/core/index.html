@@ -1,0 +1,43 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+<div class="wrapper">
+    <main>
+        <section id="home">
+            <div class="content-container">
+                <h2>Welcome To The Who Do You Think Is Going To Win The 2024 Presidential Election</h2>
+                <p>Welcome to our comedy corner where you can cast your vote and have a laugh. Who do you think will win the 2024 Presidential Election: the ever-dynamic Donald Trump or Sleepy Joe Biden? Cast your vote and see where you stand among fellow Americans!</p>
+                <p>Watch out for Joe Biden's next campaign speech! Will he remember what state he's in this time, or will we be treated to another round of "Where am I?" Guess we'll have to wait and see!</p>
+                <p>Meanwhile, Donald Trump is already planning his next sharp-dressed rally, making sure every hair is in place. They say you can judge a man by his ties, and Trump's are always on point!</p>
+            </div>
+        </section>
+
+        <section id="chart-section" style="float: right; width: 40%; padding: 20px;">
+            <h2>Probability Analysis</h2>
+            <canvas id="probabilityChart" width="400" height="400"></canvas>
+        </section>
+
+        <section id="forum">
+            <h2>Discussion Forum</h2>
+            <form id="userInputForm">
+                <label for="candidate">Who do you think will win?</label>
+                <select id="candidate" name="candidate">
+                    <option value="Biden">Joe Biden</option>
+                    <option value="Trump">Donald Trump</option>
+                </select>
+                <button type="submit">Submit</button>
+            </form>
+            <div id="results"></div>
+        </section>
+    </main>
+</div>
+{% endblock %}
+
+{% block scripts %}
+    <!-- Chart.js Library -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <!-- Custom Script -->
+    <script src="{% static 'js/scripts.js' %}"></script>
+{% endblock %}
