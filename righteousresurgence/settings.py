@@ -74,12 +74,12 @@ WSGI_APPLICATION = 'righteousresurgence.wsgi.application'
 # Database
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': config('MYSQL_DATABASE'),
-        'USER': config('MYSQL_USER'),
-        'PASSWORD': config('MYSQL_PASSWORD'),
-        'HOST': config('MYSQL_HOST'),
-        'PORT': '3306',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': os.environ.get('POSTGRES_DB'),
+        'USER': os.environ.get('POSTGRES_USER'),
+        'PASSWORD': os.environ.get('POSTGRES_PASSWORD'),
+        'HOST': os.environ.get('POSTGRES_HOST'),
+        'PORT': os.environ.get('POSTGRES_PORT', '5432'),
     }
 }
 
