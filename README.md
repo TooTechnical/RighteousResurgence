@@ -6,6 +6,42 @@
 
 This is a comprehensive guide to the Righteous Resurgence website using HTML, CSS, and JavaScript. The website includes three main pages: Home, Presidents Test, and Quiz. The Home page introduces the main features of the website, the President's Test page includes a humorous quiz about presidential fitness, and the Quiz page tests users' knowledge about the 2024 presidential election.
 
+## Major Update: Django + PostgreSQL Full-Stack Upgrade & Deployment
+
+As part of a major enhancement, this site was transformed into a **full-stack Django web application** using Python, PostgreSQL, and deployed to Heroku. Here's a breakdown of the work done and the challenges we overcame:
+
+### ✅ What I Did:
+- Converted the site into a Django project using Django 5.2.
+- Implemented PostgreSQL using Heroku’s hobby-dev add-on.
+- Configured environment variables using `python-decouple` to keep sensitive data secure.
+- Added `WhiteNoise` for static file handling in production.
+- Deployed the application successfully to Heroku with a production-ready setup.
+- Added CKEditor (rich text editor) for editing news articles through the Django admin panel.
+
+### ⚠️ Challenges Faced:
+
+#### Environment Setup Errors
+- **Problem**: `DATABASES` not defined in `settings.py`.
+- **Fix**: Defined the `DATABASES` dictionary before referencing it with `dj_database_url.config()`.
+
+#### Deployment Issues on Heroku
+- **Problem**: `collectstatic` failed due to a misconfiguration in environment variables.
+- **Fix**: Set a valid `DATABASE_URL` and ensured all config vars matched Heroku's PostgreSQL connection.
+
+#### Procfile Not Detected
+- **Problem**: App wouldn't scale dynos.
+- **Fix**: Corrected the Procfile syntax (`web: gunicorn righteousresurgence.wsgi`) and confirmed it was committed to Git.
+
+#### Static Files
+- **Problem**: Static files were not rendering properly.
+- **Fix**: Integrated WhiteNoise and set `STATICFILES_STORAGE` to `CompressedManifestStaticFilesStorage`.
+
+#### Admin Editing Tools
+- **Problem**: Basic admin lacked rich-text functionality.
+- **Fix**: Installed `django-ckeditor` and updated models to use `RichTextField()` for article body editing.
+
+---
+
 
 ## Contents
 
@@ -147,7 +183,70 @@ Here is the color scheme for the provided CSS file:
 
 ## Imagery
 
-I have not incorparated Imagery and this is due to ongoing bugs that have had negative effects on the javascript, there was some issues with the footer covering up the pie chart and also sometimes the javascript would not work and sync properly to the HTML So i created 2 quizes and included a video to try and compensate. I will however need to spend more time at tweaking the javascript as to make it run more smoother.
+## 🧠 A Note on Imagery, JavaScript, and Me Own Sanity
+
+Right, so – let’s just get this out of the way: **there’s no imagery**.  
+Not because I’m lazy (though fair play if you guessed that), but because this project was haunted. Genuinely. Cursed. Like **Banshee-code poltergeist** levels of chaos.
+
+### The JavaScript?  
+Wouldn’t behave.  
+It kept breaking things like a drunk uncle at a communion.  
+
+One minute it’s running grand, the next the **pie chart disappears**, the **footer decides it wants to live on top of everything like a dictator**, and HTML just stands there going,  
+> “Not my problem, pal.”
+
+---
+
+## 🎥 The Video Situation
+
+I tried to compensate for the visual tragedy by embedding a **video** – y’know, bring some life into it.  
+Did it load?  
+**Did it hell.**
+
+At this point, I’ve given up.  
+Not forever – just until I have **more time**, **more patience**, and **more Guinness** at home.  
+Which I don’t.  
+All I have is a **box of Lidl cornflakes** and a **Wi-Fi signal powered by grief**.
+
+---
+
+## ⏱️ But Wait – There’s a Timed Quiz!
+
+Yes. In the middle of this visual mayhem, I still managed to build a **timed quiz**.  
+It works!  
+Mostly.
+
+It’s like a **confused pensioner crossing a motorway** – slow, stubborn, but eventually gets to the other side.  
+
+The JavaScript needs tweaking – not just tweaks, really – more like **therapy**.  
+But I’ll get there.  
+**One callback function at a time.**
+
+---
+
+## ⚠️ Final Thoughts
+
+So if you’re reading this, dear examiner, and wondering:
+
+> “Why is there no image? Why is the video not working? Why is the footer eating the chart?”
+
+Please understand:
+
+I **did try**.  
+I **fought the code**. I **prayed**. I **wept**.  
+At one point I started shouting at my screen like it owed me money.
+
+But I’m still here.  
+And the **quiz works**.  
+And someday soon, when I recover and the **Guinness flows freely again**,  
+I’ll fix those images.  
+I’ll tame the JavaScript.  
+And the footer?  
+I’ll **bury it with a shovel** in the **digital bog** it crawled out of.
+
+Go easy on me. Or don’t.  
+Either way – **enjoy the quiz**, and **mind yourself**.
+
 
 ## Design
 ### Wireframes
