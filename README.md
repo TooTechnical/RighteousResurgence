@@ -1,4 +1,4 @@
- [https://tootechnical.github.io/RighteousResurgence] <!-- Replace # with your live site link -->
+ [https://righteous-resurgence-app-ec0a23350dfe.herokuapp.com/] <!-- Replace # with your live site link -->
 
 ## Brief Introduction
 
